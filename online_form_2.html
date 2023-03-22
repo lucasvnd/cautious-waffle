@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Request Form</title>
+	<style>
+		body {
+			background-color: #F8F8F8;
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			margin: auto;
+			width: 60%;
+			background-color: white;
+			padding: 20px;
+			box-shadow: 0 0 10px #999;
+		}
+		h1 {
+			color: white;
+			background-color: #4CAF50;
+			padding: 20px;
+			margin: 0;
+			font-size: 28px;
+			text-align: center;
+		}
+		form {
+			margin-top: 30px;
+		}
+		.label {
+			display: block;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+		.input {
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #CCC;
+			width: 100%;
+			margin-bottom: 15px;
+			font-size: 16px;
+		}
+		.select {
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #CCC;
+			width: 100%;
+			margin-bottom: 15px;
+			font-size: 16px;
+		}
+		.btn {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+			margin-top: 15px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Request Form</h1>
+		<form>
+			<label class="label" for="request-type">Request Type</label>
+			<select class="select" id="request-type" name="request-type">
+				<option value="cartorio">Cartorio</option>
+				<option value="ferias">Ferias</option>
+				<option value="day-off">Day Off</option>
+				<option value="hora-extra">Hora Extra</option>
+				<option value="motoboy">Motoboy</option>
+				<option value="correio-dhl">Correio / DHL</option>
+				<option value="viagem-trabalho">Viagem a Trabalho</option>
+				<option value="treinamento">Treinamento</option>
+			</select>
+
+			<label class="label" for="request-date">Request Date</label>
+			<input class="input" type="date" id="request-date" name="request-date">
+
+			<label class="label" for="request-address">Request Address</label>
+			<input class="input" type="text" id="request-address" name="request-address">
+
+			<button class="btn" type="submit">Submit</button>
+		</form>
+	</div>
+</body>
+</html>
